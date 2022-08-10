@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-Core (Cortex-M)
-   &#160;<span id="projectnumber">Version 5.5.0</span>
+   &#160;<span id="projectnumber">Version 5.6.0</span>
    </div>
    <div id="projectbrief">CMSIS-Core support for Cortex-M processor-based devices</div>
   </td>
@@ -127,8 +127,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a class="el" href="using_TrustZone_pg.html">Using TrustZone&reg; for Armv8-M</a> describes how to use the security extensions available in the Armv8-M architecture.</li>
 <li><a class="el" href="templates_pg.html">CMSIS-Core Device Templates</a> describes the files of the CMSIS-Core (Cortex-M) in detail and explains how to adapt template files provided by Arm to silicon vendor devices.</li>
 <li><a class="el" href="coreMISRA_Exceptions_pg.html">MISRA-C Deviations</a> describes the violations to the MISRA standard.</li>
-<li><a href="Modules.html"><b>Reference</b> </a> describe the features and functions of the <a class="el" href="device_h_pg.html">Device Header File &lt;device.h&gt;</a> in detail.</li>
-<li><a href="Annotated.html"><b>Data</b> <b>Structures</b> </a> describe the data structures of the <a class="el" href="device_h_pg.html">Device Header File &lt;device.h&gt;</a> in detail.</li>
+<li><a href="modules.html"><b>Reference</b> </a> describe the features and functions of the <a class="el" href="device_h_pg.html">Device Header File &lt;device.h&gt;</a> in detail.</li>
+<li><a href="annotated.html"><b>Data</b> <b>Structures</b> </a> describe the data structures of the <a class="el" href="device_h_pg.html">Device Header File &lt;device.h&gt;</a> in detail.</li>
 </ul>
 <hr/>
 <h2>CMSIS-Core (Cortex-M) in ARM::CMSIS Pack </h2>
@@ -153,7 +153,7 @@ Processor Support</h1>
 Cortex-M Generic User Guides</h2>
 <p>The Cortex-M Device Generic User Guides contain the programmers model and detailed information about the core peripherals and are available for:</p>
 <ul>
-<li><a href="https://developer.arm.com/documentation/dui0497a/latest/" target="_blank"><b>Cortex-M0 Devices Generic User Guide</b></a> (Armv6-M architecture)</li>
+<li><a href="https://developer.arm.com/documentation/dui0497/latest/" target="_blank"><b>Cortex-M0 Devices Generic User Guide</b></a> (Armv6-M architecture)</li>
 <li><a href="https://developer.arm.com/documentation/dui0662/latest/" target="_blank"><b>Cortex-M0+ Devices Generic User Guide</b></a> (Armv6-M architecture)</li>
 <li><a href="https://developer.arm.com/documentation/dui0552/latest/" target="_blank"><b>Cortex-M3 Devices Generic User Guide</b></a> (Armv7-M architecture)</li>
 <li><a href="https://developer.arm.com/documentation/dui0553/latest/" target="_blank"><b>Cortex-M4 Devices Generic User Guide</b></a> (Armv7-M architecture)</li>
@@ -161,13 +161,15 @@ Cortex-M Generic User Guides</h2>
 <li><a href="https://developer.arm.com/documentation/dui1095/latest/" target="_blank"><b>Cortex-M23 Devices Generic User Guide</b></a> (Armv8-M architecture)</li>
 <li><a href="https://developer.arm.com/documentation/100235/latest/" target="_blank"><b>Cortex-M33 Devices Generic User Guide</b></a> (Armv8-M architecture)</li>
 <li><a href="https://developer.arm.com/documentation/101273/latest/" target="_blank"><b>Cortex-M55 Devices Generic User Guide</b></a> (Armv8.1-M architecture)</li>
+<li><a href="https://developer.arm.com/documentation/101928/latest" target="_blank"><b>Cortex-M85 Devices Generic User Guide</b></a> (Armv8.1-M architecture)</li>
 </ul>
 <p>CMSIS also supports the following Cortex-M processor variants:</p>
 <ul>
 <li><a href="https://developer.arm.com/products/processors/cortex-m/cortex-m1" target="_blank"><b>Cortex-M1</b></a> is a processor designed specifically for implementation in FPGAs (Armv6-M architecture).</li>
 <li><a href="https://developer.arm.com/products/processors/cortex-m/sc000-processor" target="_blank"><b>SecurCore SC000</b></a> is designed specifically for smartcard and security applications (Armv6-M architecture).</li>
 <li><a href="https://developer.arm.com/products/processors/cortex-m/sc300-processor" target="_blank"><b>SecurCore SC300</b></a> is designed specifically for smartcard and security applications (Armv7-M architecture).</li>
-<li><a href="https://developer.arm.com/products/processors/cortex-m/cortex-m35p" target="_blank"><b>Cortex-M35P</b></a> is a temper resistant Cortex-M processor with optional software isolation using TrustZone for Armv8-M.</li>
+<li><a href="https://developer.arm.com/products/processors/cortex-m/cortex-m35p" target="_blank"><b>Cortex-M35P</b></a> is a tamper resistant Cortex-M processor with optional software isolation using TrustZone for Armv8-M.</li>
+<li><a href="https://www.armchina.com/mountain?infoId=160" target="_blank"><b>STAR-MC1</b></a> is a variant of Armv8-M with TrustZone designed by Arm China.</li>
 </ul>
 <h2><a class="anchor" id="ARMv8M"></a>
 Armv8-M and Armv8.1-M Architecture</h2>
@@ -179,9 +181,9 @@ Armv8-M and Armv8.1-M Architecture</h2>
 Tested and Verified Toolchains</h1>
 <p>The <a class="el" href="templates_pg.html">CMSIS-Core Device Templates</a> supplied by Arm have been tested and verified with the following toolchains:</p>
 <ul>
-<li>Arm: Arm Compiler 5.06 update 7 (not for Cortex-M23/33/35P/55, Armv8-M, Armv8.1-M)</li>
+<li>Arm: Arm Compiler 5.06 update 7 (not for Cortex-M23/33/35P/55/85, Armv8-M, Armv8.1-M)</li>
 <li>Arm: Arm Compiler 6.16</li>
-<li>Arm: Arm Compiler 6.6.4 (not for Cortex-M0/23/33/35P/55, Armv8-M, Armv8.1-M)</li>
+<li>Arm: Arm Compiler 6.6.4 (not for Cortex-M0/23/33/35P/55/85, Armv8-M, Armv8.1-M)</li>
 <li>GNU: GNU Arm Embedded Toolchain 10-2020-q4-major (10.2.1 20201103)</li>
 <li>IAR: IAR ANSI C/C++ Compiler for Arm 8.20.1.14183 </li>
 </ul>

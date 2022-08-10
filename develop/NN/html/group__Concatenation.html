@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-NN
-   &#160;<span id="projectnumber">Version 3.0.0</span>
+   &#160;<span id="projectnumber">Version 4.0.0</span>
    </div>
    <div id="projectbrief">CMSIS NN Software Library</div>
   </td>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('group__Concatenation.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -201,11 +201,13 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_y</td><td>Height of input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_z</td><td>Channels in input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_w</td><td>Batch size in input tensor </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output tensor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output tensor. Expected to be at least input_x * input_y * input_z * input_w bytes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset_w</td><td>The offset on the W axis to start concatenating the input tensor It is user responsibility to provide the correct value </td></tr>
   </table>
   </dd>
 </dl>
+
+<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#a085459f6280c8f586ddd64998dece532">arm_memcpy_q7()</a>.</p>
 
 </div>
 </div>
@@ -279,18 +281,20 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function, data layout independent, can be used to concatenate either int8 or uint8 tensors because it does not involve any arithmetic operation</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Pointer to input tensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Pointer to input tensor. Input tensor must not overlap with the output tensor. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_x</td><td>Width of input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_y</td><td>Height of input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_z</td><td>Channels in input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_w</td><td>Batch size in input tensor </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output tensor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output tensor. Expected to be at least (input_x * input_y * input_z * input_w) + offset_x bytes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">output_x</td><td>Width of output tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset_x</td><td>The offset (in number of elements) on the X axis to start concatenating the input tensor It is user responsibility to provide the correct value</td></tr>
   </table>
   </dd>
 </dl>
 <p><b> Input constraints</b> offset_x is less than output_x </p>
+
+<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#a085459f6280c8f586ddd64998dece532">arm_memcpy_q7()</a>.</p>
 
 </div>
 </div>
@@ -364,18 +368,20 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function, data layout independent, can be used to concatenate either int8 or uint8 tensors because it does not involve any arithmetic operation</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Pointer to input tensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Pointer to input tensor. Input tensor must not overlap with the output tensor. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_x</td><td>Width of input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_y</td><td>Height of input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_z</td><td>Channels in input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_w</td><td>Batch size in input tensor </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output tensor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output tensor. Expected to be at least (input_z * input_w * input_x * input_y) + offset_y bytes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">output_y</td><td>Height of output tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset_y</td><td>The offset on the Y axis to start concatenating the input tensor It is user responsibility to provide the correct value</td></tr>
   </table>
   </dd>
 </dl>
 <p><b> Input constraints</b> offset_y is less than output_y </p>
+
+<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#a085459f6280c8f586ddd64998dece532">arm_memcpy_q7()</a>.</p>
 
 </div>
 </div>
@@ -449,18 +455,20 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function, data layout independent, can be used to concatenate either int8 or uint8 tensors because it does not involve any arithmetic operation</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Pointer to input tensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Pointer to input tensor. Input tensor must not overlap with output tensor. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_x</td><td>Width of input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_y</td><td>Height of input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_z</td><td>Channels in input tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_w</td><td>Batch size in input tensor </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output tensor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output tensor. Expected to be at least (input_x * input_y * input_z * input_w) + offset_z bytes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">output_z</td><td>Channels in output tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset_z</td><td>The offset on the Z axis to start concatenating the input tensor It is user responsibility to provide the correct value</td></tr>
   </table>
   </dd>
 </dl>
 <p><b> Input constraints</b> offset_z is less than output_z </p>
+
+<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#a085459f6280c8f586ddd64998dece532">arm_memcpy_q7()</a>.</p>
 
 </div>
 </div>

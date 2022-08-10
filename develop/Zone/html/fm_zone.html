@@ -120,6 +120,8 @@ $(document).ready(function(){initNavTree('fm_zone.html','');});
 <tr>
 <td>.Pname </td><td>Name of the processor core. </td><td>RestrictedString  </td></tr>
 <tr>
+<td>.class </td><td>Class information for execution zones. </td><td>string  </td></tr>
+<tr>
 <td>.security </td><td>The <a class="el" href="zoneFormat.html#security">security</a> setting for this zone in the following separate fields. </td><td>SecurityType  </td></tr>
 <tr>
 <td>.security.s </td><td>Zone is executed in <em>"secure"</em> state. </td><td>xs:boolean  </td></tr>
@@ -135,6 +137,8 @@ $(document).ready(function(){initNavTree('fm_zone.html','');});
 <td><a class="el" href="fm_memory.html">.memory</a> </td><td>A sequence of all memory regions that are accessible in the zone (or system partition). </td><td>sequence  </td></tr>
 <tr>
 <td><a class="el" href="fm_peripheral.html">.peripheral</a> </td><td>A sequence of all peripherals that are accessible in the zone (or system partition). </td><td>sequence  </td></tr>
+<tr>
+<td><a class="el" href="fm_interrupt.html">.interrupt</a> </td><td>A sequence of all interrupt sources that belong to peripherals that are accessible in the zone (or system partition). </td><td>sequence  </td></tr>
 <tr>
 <td><a class="el" href="fm_mpu_setup.html">.mpu_setup</a> </td><td>A sequence of configuration information for the Memory Protection Unit (MPU). </td><td>sequence  </td></tr>
 </table>

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-NN
-   &#160;<span id="projectnumber">Version 3.0.0</span>
+   &#160;<span id="projectnumber">Version 4.0.0</span>
    </div>
    <div id="projectbrief">CMSIS NN Software Library</div>
   </td>
@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
       <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
       <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
@@ -90,7 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="globals.html#index_a"><span>a</span></a></li>
+      <li><a href="globals.html#index__"><span>_</span></a></li>
+      <li><a href="globals_a.html#index_a"><span>a</span></a></li>
       <li><a href="globals_c.html#index_c"><span>c</span></a></li>
       <li><a href="globals_d.html#index_d"><span>d</span></a></li>
       <li><a href="globals_e.html#index_e"><span>e</span></a></li>
@@ -99,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_m.html#index_m"><span>m</span></a></li>
       <li class="current"><a href="globals_n.html#index_n"><span>n</span></a></li>
       <li><a href="globals_o.html#index_o"><span>o</span></a></li>
+      <li><a href="globals_p.html#index_p"><span>p</span></a></li>
       <li><a href="globals_q.html#index_q"><span>q</span></a></li>
       <li><a href="globals_r.html#index_r"><span>r</span></a></li>
       <li><a href="globals_s.html#index_s"><span>s</span></a></li>
@@ -126,7 +129,7 @@ $(document).ready(function(){initNavTree('globals_n.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -162,6 +165,10 @@ $(document).ready(function(){initNavTree('globals_n.html','');});
 : <a class="el" href="group__NNBasicMath.html#gaf7e914e84c2fa6bcf9b0727b8c46c250">arm_nnsupportfunctions.h</a>
 , <a class="el" href="group__NNBasicMath.html#gaf7e914e84c2fa6bcf9b0727b8c46c250">arm_nn_depthwise_conv_nt_t_padded_s8.c</a>
 </li>
+<li>arm_nn_depthwise_conv_nt_t_s16()
+: <a class="el" href="group__NNBasicMath.html#gaf4e238a5ef16167a478d6e076f2207f1">arm_nnsupportfunctions.h</a>
+, <a class="el" href="group__NNBasicMath.html#gaf4e238a5ef16167a478d6e076f2207f1">arm_nn_depthwise_conv_nt_t_s16.c</a>
+</li>
 <li>arm_nn_depthwise_conv_nt_t_s8()
 : <a class="el" href="group__NNBasicMath.html#ga7f74841dd08196377cc29ce98deb2c12">arm_nnsupportfunctions.h</a>
 , <a class="el" href="group__NNBasicMath.html#ga7f74841dd08196377cc29ce98deb2c12">arm_nn_depthwise_conv_nt_t_s8.c</a>
@@ -183,32 +190,32 @@ $(document).ready(function(){initNavTree('globals_n.html','');});
 : <a class="el" href="arm__nnsupportfunctions_8h.html#aa278c8c2ac1e8bd47fb377fa7cb77553">arm_nnsupportfunctions.h</a>
 </li>
 <li>arm_nn_mat_mul_core_1x_s8()
-: <a class="el" href="group__NNBasicMath.html#ga5224f2f155a59498c97f4d62ae726ea5">arm_nnsupportfunctions.h</a>
-, <a class="el" href="group__NNBasicMath.html#ga5224f2f155a59498c97f4d62ae726ea5">arm_nn_mat_mul_core_1x_s8.c</a>
+: <a class="el" href="group__NNBasicMath.html#gada3234313b4c9fefd7c4421d88c4a785">arm_nnsupportfunctions.h</a>
+, <a class="el" href="group__NNBasicMath.html#gada3234313b4c9fefd7c4421d88c4a785">arm_nn_mat_mul_core_1x_s8.c</a>
 </li>
 <li>arm_nn_mat_mul_core_4x_s8()
-: <a class="el" href="group__NNBasicMath.html#gae893fd2b0fadf44bcd2870ca2c2c3634">arm_nnsupportfunctions.h</a>
-, <a class="el" href="group__NNBasicMath.html#gae893fd2b0fadf44bcd2870ca2c2c3634">arm_nn_mat_mul_core_4x_s8.c</a>
+: <a class="el" href="group__NNBasicMath.html#ga356c6870ac897816c016e7b77a3b767a">arm_nnsupportfunctions.h</a>
+, <a class="el" href="group__NNBasicMath.html#ga356c6870ac897816c016e7b77a3b767a">arm_nn_mat_mul_core_4x_s8.c</a>
 </li>
 <li>arm_nn_mat_mult_kernel_q7_q15()
 : <a class="el" href="arm__nnfunctions_8h.html#abc4fb258cfe8500ee68e812a293a80a3">arm_nnfunctions.h</a>
 , <a class="el" href="arm__nn__mat__mult__kernel__q7__q15_8c.html#abc4fb258cfe8500ee68e812a293a80a3">arm_nn_mat_mult_kernel_q7_q15.c</a>
 </li>
 <li>arm_nn_mat_mult_kernel_q7_q15_reordered()
-: <a class="el" href="arm__nnfunctions_8h.html#aefe9c7ce9a65060a244b06dffe74c4b3">arm_nnfunctions.h</a>
+: <a class="el" href="arm__nnsupportfunctions_8h.html#aefe9c7ce9a65060a244b06dffe74c4b3">arm_nnsupportfunctions.h</a>
 , <a class="el" href="arm__nn__mat__mult__kernel__q7__q15__reordered_8c.html#aefe9c7ce9a65060a244b06dffe74c4b3">arm_nn_mat_mult_kernel_q7_q15_reordered.c</a>
 </li>
+<li>arm_nn_mat_mult_kernel_s16()
+: <a class="el" href="arm__nnsupportfunctions_8h.html#a674055a9eeb7299669c8c4b6532de342">arm_nnsupportfunctions.h</a>
+, <a class="el" href="arm__nn__mat__mul__kernel__s16_8c.html#a674055a9eeb7299669c8c4b6532de342">arm_nn_mat_mul_kernel_s16.c</a>
+</li>
 <li>arm_nn_mat_mult_kernel_s8_s16()
-: <a class="el" href="arm__nnfunctions_8h.html#a2da69a593037381cd149616f2fd57cce">arm_nnfunctions.h</a>
+: <a class="el" href="arm__nnsupportfunctions_8h.html#a2da69a593037381cd149616f2fd57cce">arm_nnsupportfunctions.h</a>
 , <a class="el" href="arm__nn__mat__mult__kernel__s8__s16_8c.html#a2da69a593037381cd149616f2fd57cce">arm_nn_mat_mult_kernel_s8_s16.c</a>
 </li>
-<li>arm_nn_mat_mult_kernel_s8_s16_reordered()
-: <a class="el" href="arm__nn__mat__mult__kernel__s8__s16__reordered_8c.html#a1bbc24203cf1766cf75fa27db48b5eb4">arm_nn_mat_mult_kernel_s8_s16_reordered.c</a>
-, <a class="el" href="arm__nnfunctions_8h.html#a1bbc24203cf1766cf75fa27db48b5eb4">arm_nnfunctions.h</a>
-</li>
 <li>arm_nn_mat_mult_nt_t_s8()
-: <a class="el" href="group__NNBasicMath.html#ga360cdaa16c399e3bfbeaaa7296c326e1">arm_nnsupportfunctions.h</a>
-, <a class="el" href="group__NNBasicMath.html#ga360cdaa16c399e3bfbeaaa7296c326e1">arm_nn_mat_mult_nt_t_s8.c</a>
+: <a class="el" href="group__NNBasicMath.html#ga59ab655606dd4f7a90f573b7479c6dbf">arm_nnsupportfunctions.h</a>
+, <a class="el" href="group__NNBasicMath.html#ga59ab655606dd4f7a90f573b7479c6dbf">arm_nn_mat_mult_nt_t_s8.c</a>
 </li>
 <li>arm_nn_mat_mult_s8()
 : <a class="el" href="arm__nnsupportfunctions_8h.html#aaf7a3da870f2c5e86cdef0d3975e3d69">arm_nnsupportfunctions.h</a>
@@ -218,8 +225,8 @@ $(document).ready(function(){initNavTree('globals_n.html','');});
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a6caa6da5a6df5ebedf5efc49a56a42dd">arm_nnsupportfunctions.h</a>
 </li>
 <li>arm_nn_mult_q15()
-: <a class="el" href="group__NNBasicMath.html#ga08f8340aa6533271b3aa6d211614fe22">arm_nnsupportfunctions.h</a>
-, <a class="el" href="group__NNBasicMath.html#ga08f8340aa6533271b3aa6d211614fe22">arm_nn_mult_q15.c</a>
+: <a class="el" href="group__NNBasicMath.html#ga08f8340aa6533271b3aa6d211614fe22">arm_nn_mult_q15.c</a>
+, <a class="el" href="group__NNBasicMath.html#ga08f8340aa6533271b3aa6d211614fe22">arm_nnsupportfunctions.h</a>
 </li>
 <li>arm_nn_mult_q7()
 : <a class="el" href="group__NNBasicMath.html#gad46c9ab012cceda8ce6681c687a58c70">arm_nnsupportfunctions.h</a>
@@ -246,16 +253,45 @@ $(document).ready(function(){initNavTree('globals_n.html','');});
 <li>arm_nn_requantize_s64()
 : <a class="el" href="arm__nnsupportfunctions_8h.html#aa03e369b608572b80a4e56e8298a21c0">arm_nnsupportfunctions.h</a>
 </li>
+<li>arm_nn_softmax_common_s8()
+: <a class="el" href="group__Softmax.html#gaa5632ba67b623b5dff0c4a2d8e2a9a3a">arm_nn_softmax_common_s8.c</a>
+, <a class="el" href="group__Softmax.html#gaa5632ba67b623b5dff0c4a2d8e2a9a3a">arm_nnsupportfunctions.h</a>
+</li>
+<li>arm_nn_vec_mat_mult_t_s16()
+: <a class="el" href="group__NNBasicMath.html#ga3283c2da5c4e313a64cf348e2c161f3f">arm_nn_vec_mat_mult_t_s16.c</a>
+, <a class="el" href="group__NNBasicMath.html#ga3283c2da5c4e313a64cf348e2c161f3f">arm_nnsupportfunctions.h</a>
+</li>
 <li>arm_nn_vec_mat_mult_t_s8()
-: <a class="el" href="group__NNBasicMath.html#gacbc28cf23c7549bcf89d1e8f1481c389">arm_nn_vec_mat_mult_t_s8.c</a>
-, <a class="el" href="group__NNBasicMath.html#gacbc28cf23c7549bcf89d1e8f1481c389">arm_nnsupportfunctions.h</a>
+: <a class="el" href="group__NNBasicMath.html#ga89f5ffb84bec69f51d734b8701d4df5b">arm_nn_vec_mat_mult_t_s8.c</a>
+, <a class="el" href="group__NNBasicMath.html#ga89f5ffb84bec69f51d734b8701d4df5b">arm_nnsupportfunctions.h</a>
 </li>
 <li>arm_nn_vec_mat_mult_t_svdf_s8()
-: <a class="el" href="group__NNBasicMath.html#gac0675e8069a303ce2e8f8ed2a9320859">arm_nn_vec_mat_mult_t_svdf_s8.c</a>
-, <a class="el" href="group__NNBasicMath.html#gac0675e8069a303ce2e8f8ed2a9320859">arm_nnsupportfunctions.h</a>
+: <a class="el" href="group__NNBasicMath.html#ga15df1fc03dfaa6e7c2499dbcd8bc4932">arm_nnsupportfunctions.h</a>
+, <a class="el" href="group__NNBasicMath.html#ga15df1fc03dfaa6e7c2499dbcd8bc4932">arm_nn_vec_mat_mult_t_svdf_s8.c</a>
 </li>
 <li>arm_nn_write_q15x2_ia()
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a9477fb2f82284ac4fe20b2efb721f5f5">arm_nnsupportfunctions.h</a>
+</li>
+<li>arm_nn_write_q7x4_ia()
+: <a class="el" href="arm__nnsupportfunctions_8h.html#a17553765eecd852dc2f9663575f2a91d">arm_nnsupportfunctions.h</a>
+</li>
+<li>NN_Q15_MAX
+: <a class="el" href="arm__nn__math__types_8h.html#a30fe8775d9c28c72fb7c336ab4751269">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q15_MIN
+: <a class="el" href="arm__nn__math__types_8h.html#a51e8177e289decc5ccf94be9c160064d">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q31_MAX
+: <a class="el" href="arm__nn__math__types_8h.html#a602e8d32c870d50039bbd651fd9b4544">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q31_MIN
+: <a class="el" href="arm__nn__math__types_8h.html#aa10494e03ee6bdf5d573079ca559f073">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q7_MAX
+: <a class="el" href="arm__nn__math__types_8h.html#a3fc66c904b4e92c8e06803dac0ee54a1">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q7_MIN
+: <a class="el" href="arm__nn__math__types_8h.html#a342199b16a4abf4da4a7607a3a552b4f">arm_nn_math_types.h</a>
 </li>
 <li>NN_ROUND
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a4cbd428a2b4a4f6b2a6e4219520c7ce0">arm_nnsupportfunctions.h</a>

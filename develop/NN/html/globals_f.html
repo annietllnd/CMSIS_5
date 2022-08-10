@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-NN
-   &#160;<span id="projectnumber">Version 3.0.0</span>
+   &#160;<span id="projectnumber">Version 4.0.0</span>
    </div>
    <div id="projectbrief">CMSIS NN Software Library</div>
   </td>
@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
       <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
       <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
@@ -90,7 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="globals.html#index_a"><span>a</span></a></li>
+      <li><a href="globals.html#index__"><span>_</span></a></li>
+      <li><a href="globals_a.html#index_a"><span>a</span></a></li>
       <li><a href="globals_c.html#index_c"><span>c</span></a></li>
       <li><a href="globals_d.html#index_d"><span>d</span></a></li>
       <li><a href="globals_e.html#index_e"><span>e</span></a></li>
@@ -99,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_m.html#index_m"><span>m</span></a></li>
       <li><a href="globals_n.html#index_n"><span>n</span></a></li>
       <li><a href="globals_o.html#index_o"><span>o</span></a></li>
+      <li><a href="globals_p.html#index_p"><span>p</span></a></li>
       <li><a href="globals_q.html#index_q"><span>q</span></a></li>
       <li><a href="globals_r.html#index_r"><span>r</span></a></li>
       <li><a href="globals_s.html#index_s"><span>s</span></a></li>
@@ -126,7 +129,7 @@ $(document).ready(function(){initNavTree('globals_f.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -140,36 +143,54 @@ $(document).ready(function(){initNavTree('globals_f.html','');});
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>arm_fully_connected_mat_q7_vec_q15()
-: <a class="el" href="group__FC.html#ga4a1521e7532a1e62d71f3b12762016e2">arm_nnfunctions.h</a>
-, <a class="el" href="group__FC.html#ga4a1521e7532a1e62d71f3b12762016e2">arm_fully_connected_mat_q7_vec_q15.c</a>
+: <a class="el" href="group__FC.html#ga60b1ce5ad8398fe0ca94428ccfb422b4">arm_nnfunctions.h</a>
+, <a class="el" href="group__FC.html#ga60b1ce5ad8398fe0ca94428ccfb422b4">arm_fully_connected_mat_q7_vec_q15.c</a>
 </li>
 <li>arm_fully_connected_mat_q7_vec_q15_opt()
-: <a class="el" href="group__FC.html#gae3857bb6375692e81dde8cbd70adec08">arm_fully_connected_mat_q7_vec_q15_opt.c</a>
-, <a class="el" href="group__FC.html#gae3857bb6375692e81dde8cbd70adec08">arm_nnfunctions.h</a>
+: <a class="el" href="group__FC.html#ga580497e2ef34601937441f76d7463f08">arm_nnfunctions.h</a>
+, <a class="el" href="group__FC.html#ga580497e2ef34601937441f76d7463f08">arm_fully_connected_mat_q7_vec_q15_opt.c</a>
 </li>
 <li>arm_fully_connected_q15()
-: <a class="el" href="group__FC.html#gaac666c212b209e636c2369dd5c75d0dc">arm_nnfunctions.h</a>
-, <a class="el" href="group__FC.html#gaac666c212b209e636c2369dd5c75d0dc">arm_fully_connected_q15.c</a>
+: <a class="el" href="group__FC.html#ga5d16f7dcd49d96e8f16440a57198ee98">arm_nnfunctions.h</a>
+, <a class="el" href="group__FC.html#ga5d16f7dcd49d96e8f16440a57198ee98">arm_fully_connected_q15.c</a>
 </li>
 <li>arm_fully_connected_q15_opt()
-: <a class="el" href="group__FC.html#ga062912078da113f5dd2004fd919a0ff2">arm_fully_connected_q15_opt.c</a>
-, <a class="el" href="group__FC.html#ga062912078da113f5dd2004fd919a0ff2">arm_nnfunctions.h</a>
+: <a class="el" href="group__FC.html#ga3a63eb256d70628f8d3f6b149ac5686b">arm_fully_connected_q15_opt.c</a>
+, <a class="el" href="group__FC.html#ga3a63eb256d70628f8d3f6b149ac5686b">arm_nnfunctions.h</a>
 </li>
 <li>arm_fully_connected_q7()
-: <a class="el" href="group__FC.html#ga8b7e0c2e989e8c75f0dc789f3115323d">arm_nnfunctions.h</a>
-, <a class="el" href="group__FC.html#ga8b7e0c2e989e8c75f0dc789f3115323d">arm_fully_connected_q7.c</a>
+: <a class="el" href="group__FC.html#gae889fe7676029e7fd4678662da93b7e7">arm_nnfunctions.h</a>
+, <a class="el" href="group__FC.html#gae889fe7676029e7fd4678662da93b7e7">arm_fully_connected_q7.c</a>
 </li>
 <li>arm_fully_connected_q7_opt()
-: <a class="el" href="group__FC.html#gaf82b71ef472a38f8fc9ac414d9d07e67">arm_nnfunctions.h</a>
-, <a class="el" href="group__FC.html#gaf82b71ef472a38f8fc9ac414d9d07e67">arm_fully_connected_q7_opt.c</a>
+: <a class="el" href="group__FC.html#ga5311b3a82500913a053c634e2eb7aab5">arm_nnfunctions.h</a>
+, <a class="el" href="group__FC.html#ga5311b3a82500913a053c634e2eb7aab5">arm_fully_connected_q7_opt.c</a>
+</li>
+<li>arm_fully_connected_s16()
+: <a class="el" href="group__FC.html#ga6613c4e797098f0a1ce870f71752e248">arm_nnfunctions.h</a>
+, <a class="el" href="group__FC.html#ga6613c4e797098f0a1ce870f71752e248">arm_fully_connected_s16.c</a>
+</li>
+<li>arm_fully_connected_s16_get_buffer_size()
+: <a class="el" href="group__FC.html#ga5f0e89482a3ea7ab417630be80ca983d">arm_nnfunctions.h</a>
+, <a class="el" href="group__FC.html#ga5f0e89482a3ea7ab417630be80ca983d">arm_fully_connected_s16.c</a>
 </li>
 <li>arm_fully_connected_s8()
-: <a class="el" href="group__FC.html#ga30d44fed122f2e159a417f9c12181ded">arm_nnfunctions.h</a>
-, <a class="el" href="group__FC.html#ga30d44fed122f2e159a417f9c12181ded">arm_fully_connected_s8.c</a>
+: <a class="el" href="group__FC.html#ga0e97c31706f6c663e813ffcbfceffa6d">arm_nnfunctions.h</a>
+, <a class="el" href="group__FC.html#ga0e97c31706f6c663e813ffcbfceffa6d">arm_fully_connected_s8.c</a>
 </li>
 <li>arm_fully_connected_s8_get_buffer_size()
 : <a class="el" href="group__FC.html#ga88e541ff9fb088ebccb79a7a6b8bbe1e">arm_nnfunctions.h</a>
 , <a class="el" href="group__FC.html#ga88e541ff9fb088ebccb79a7a6b8bbe1e">arm_fully_connected_s8.c</a>
+</li>
+<li>file()
+: <a class="el" href="NNSupportFunctions_2CMakeLists_8txt.html#a8d7e7c15c84124257a973f238fb8a675">NNSupportFunctions/CMakeLists.txt</a>
+, <a class="el" href="SVDFunctions_2CMakeLists_8txt.html#a8d7e7c15c84124257a973f238fb8a675">SVDFunctions/CMakeLists.txt</a>
+, <a class="el" href="ActivationFunctions_2CMakeLists_8txt.html#a8d7e7c15c84124257a973f238fb8a675">ActivationFunctions/CMakeLists.txt</a>
+, <a class="el" href="ReshapeFunctions_2CMakeLists_8txt.html#ac88d81d89655b3eabe77f1a4cae6b2e1">ReshapeFunctions/CMakeLists.txt</a>
+, <a class="el" href="BasicMathFunctions_2CMakeLists_8txt.html#ac88d81d89655b3eabe77f1a4cae6b2e1">BasicMathFunctions/CMakeLists.txt</a>
+, <a class="el" href="ConcatenationFunctions_2CMakeLists_8txt.html#ac88d81d89655b3eabe77f1a4cae6b2e1">ConcatenationFunctions/CMakeLists.txt</a>
+, <a class="el" href="SoftmaxFunctions_2CMakeLists_8txt.html#a8d7e7c15c84124257a973f238fb8a675">SoftmaxFunctions/CMakeLists.txt</a>
+, <a class="el" href="FullyConnectedFunctions_2CMakeLists_8txt.html#a8d7e7c15c84124257a973f238fb8a675">FullyConnectedFunctions/CMakeLists.txt</a>
 </li>
 </ul>
 </div><!-- contents -->

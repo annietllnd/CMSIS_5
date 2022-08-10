@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-DAP
-   &#160;<span id="projectnumber">Version 2.1.0</span>
+   &#160;<span id="projectnumber">Version 2.1.1</span>
    </div>
    <div id="projectbrief">Interface Firmware for CoreSight Debug Access Port</div>
   </td>
@@ -116,15 +116,17 @@ $(document).ready(function(){initNavTree('dap_revisionHistory.html','');});
 <tr>
 <th>Version </th><th>Description  </th></tr>
 <tr>
+<td>V2.1.1 </td><td>Allow default clock frequency to use fast clock mode   </td></tr>
+<tr>
 <td>V2.1.0 </td><td>Added: <a class="el" href="group__DAP__uart__gr.html">UART COM Commands</a> to support target communication via extra UART<br/>
  Added: UART Receive/Transmit Buffer Size values in the command <a class="el" href="group__DAP__Info.html">DAP_Info</a> <br/>
  Added: Target Board Vendor and Target Board Name strings in the command <a class="el" href="group__DAP__Info.html">DAP_Info</a> <br/>
  Added: Product Firmware Version string in the command <a class="el" href="group__DAP__Info.html">DAP_Info</a> <br/>
  Changed: String encoding in <a class="el" href="group__DAP__Info.html">DAP_Info</a> from ASCII to UTF-8   </td></tr>
 <tr>
-<td>V2.0.0 </td><td>Changed: Communication via WinUSB to achieve high-speed transfer rates<br/>
- Added: Streaming SWO via separate <a class="el" href="group__DAP__ConfigUSB__gr.html">WinUSB</a> endpoint<br/>
- Added: <a class="el" href="group__DAP__SWO__Transport.html">DAP_SWO_Transport</a> extended with transport mode 2 - Send trace data via separate <a class="el" href="group__DAP__ConfigUSB__gr.html">WinUSB</a> endpoint   </td></tr>
+<td>V2.0.0 </td><td>Changed: Communication via USB bulk endpoints to achieve high-speed transfer rates<br/>
+ Added: Streaming SWO via separate <a class="el" href="group__DAP__ConfigUSB__gr.html">USB bulk endpoint</a><br/>
+ Added: <a class="el" href="group__DAP__SWO__Transport.html">DAP_SWO_Transport</a> extended with transport mode 2 - Send trace data via separate <a class="el" href="group__DAP__ConfigUSB__gr.html">USB bulk endpoint</a>   </td></tr>
 <tr>
 <td>V1.3.0 </td><td>Added: Target Board Vendor and Target Board Name strings in the command <a class="el" href="group__DAP__Info.html">DAP_Info</a> <br/>
  Added: Product Firmware Version string in the command <a class="el" href="group__DAP__Info.html">DAP_Info</a> <br/>

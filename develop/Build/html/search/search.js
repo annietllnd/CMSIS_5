@@ -7,8 +7,8 @@
 
 var indexSectionsWithContent =
 {
-  0: "coprs",
-  1: "coprs"
+  0: "cmoprs",
+  1: "cmoprs"
 };
 
 var indexSectionNames =

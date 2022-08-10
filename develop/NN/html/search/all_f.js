@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['tanhhtable_5fq15',['tanhHTable_q15',['../arm__nntables_8c.html#a4d093f7b0dc798d4898ff4fd125b21a6',1,'arm_nntables.c']]],
-  ['tanhltable_5fq15',['tanhLTable_q15',['../arm__nntables_8c.html#a7cb5ad2fff7e241d09024332488a706e',1,'arm_nntables.c']]],
-  ['tanhtable_5fq15',['tanhTable_q15',['../arm__nn__tables_8h.html#a6faad2fec173b2702fd0f219a83ca320',1,'tanhTable_q15():&#160;arm_nntables.c'],['../arm__nntables_8c.html#a6faad2fec173b2702fd0f219a83ca320',1,'tanhTable_q15():&#160;arm_nntables.c']]],
-  ['tanhtable_5fq7',['tanhTable_q7',['../arm__nn__tables_8h.html#a4f854bdf13f630ec21b3ad074491e32f',1,'tanhTable_q7():&#160;arm_nntables.c'],['../arm__nntables_8c.html#a4f854bdf13f630ec21b3ad074491e32f',1,'tanhTable_q7():&#160;arm_nntables.c']]],
-  ['todo_20list',['Todo List',['../todo.html',1,'']]]
+  ['revision_20history_20of_20cmsis_2dnn',['Revision History of CMSIS-NN',['../ChangeLog_pg.html',1,'']]],
+  ['cmakelists_2etxt',['CMakeLists.txt',['../ReshapeFunctions_2CMakeLists_8txt.html',1,'']]],
+  ['rank',['rank',['../structcmsis__nn__svdf__params.html#a2334fd8228d3989dc34abd2bc36ca032',1,'cmsis_nn_svdf_params']]],
+  ['reduce_5fmultiplier',['REDUCE_MULTIPLIER',['../arm__nnsupportfunctions_8h.html#a19343832dbe881d527496171f69dc0c3',1,'arm_nnsupportfunctions.h']]],
+  ['reshape_20functions',['Reshape Functions',['../group__Reshape.html',1,'']]],
+  ['right_5fshift',['RIGHT_SHIFT',['../arm__nnsupportfunctions_8h.html#a26af54489c1401b91595bf0c92ef87c4',1,'arm_nnsupportfunctions.h']]]
 ];

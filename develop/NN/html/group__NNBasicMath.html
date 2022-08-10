@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-NN
-   &#160;<span id="projectnumber">Version 3.0.0</span>
+   &#160;<span id="projectnumber">Version 4.0.0</span>
    </div>
    <div id="projectbrief">CMSIS NN Software Library</div>
   </td>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('group__NNBasicMath.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,39 +117,45 @@ $(document).ready(function(){initNavTree('group__NNBasicMath.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga379c39e614f1468e1fdb524f51fb6061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga379c39e614f1468e1fdb524f51fb6061">arm_nn_accumulate_q7_to_q15</a> (q15_t *pDst, const q7_t *pSrc, uint32_t length)</td></tr>
+<tr class="memitem:ga379c39e614f1468e1fdb524f51fb6061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga379c39e614f1468e1fdb524f51fb6061">arm_nn_accumulate_q7_to_q15</a> (<a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *pDst, const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *pSrc, uint32_t length)</td></tr>
 <tr class="memdesc:ga379c39e614f1468e1fdb524f51fb6061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the elements from a q7 vector and accumulate to a q15 vector.  <a href="#ga379c39e614f1468e1fdb524f51fb6061">More...</a><br/></td></tr>
 <tr class="separator:ga379c39e614f1468e1fdb524f51fb6061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae65bde3218210820d789659179e14ce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gae65bde3218210820d789659179e14ce3">arm_nn_add_q7</a> (const q7_t *input, q31_t *output, uint32_t block_size)</td></tr>
+<tr class="memitem:gae65bde3218210820d789659179e14ce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gae65bde3218210820d789659179e14ce3">arm_nn_add_q7</a> (const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *input, <a class="el" href="arm__nn__math__types_8h.html#adc89a3547f5324b7b3b95adec3806bc0">q31_t</a> *output, uint32_t block_size)</td></tr>
 <tr class="memdesc:gae65bde3218210820d789659179e14ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-saturating addition of elements of a q7 vector.  <a href="#gae65bde3218210820d789659179e14ce3">More...</a><br/></td></tr>
 <tr class="separator:gae65bde3218210820d789659179e14ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf7e914e84c2fa6bcf9b0727b8c46c250"><td class="memItemLeft" align="right" valign="top">q7_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gaf7e914e84c2fa6bcf9b0727b8c46c250">arm_nn_depthwise_conv_nt_t_padded_s8</a> (const q7_t *lhs, const q7_t *rhs, const int32_t input_offset, const uint16_t num_ch, const int32_t *out_shift, const int32_t *out_mult, const int32_t out_offset, const int32_t activation_min, const int32_t activation_max, const uint16_t row_x_col, const int32_t *const output_bias, q7_t *out)</td></tr>
+<tr class="memitem:gaf7e914e84c2fa6bcf9b0727b8c46c250"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gaf7e914e84c2fa6bcf9b0727b8c46c250">arm_nn_depthwise_conv_nt_t_padded_s8</a> (const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *lhs, const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *rhs, const int32_t input_offset, const uint16_t num_ch, const int32_t *out_shift, const int32_t *out_mult, const int32_t out_offset, const int32_t activation_min, const int32_t activation_max, const uint16_t row_x_col, const int32_t *const output_bias, <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *out)</td></tr>
 <tr class="memdesc:gaf7e914e84c2fa6bcf9b0727b8c46c250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depthwise convolution of transposed rhs matrix with 4 lhs matrices. To be used in padded cases where the padding is -lhs_offset(Range: int8). Dimensions are the same for lhs and rhs.  <a href="#gaf7e914e84c2fa6bcf9b0727b8c46c250">More...</a><br/></td></tr>
 <tr class="separator:gaf7e914e84c2fa6bcf9b0727b8c46c250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f74841dd08196377cc29ce98deb2c12"><td class="memItemLeft" align="right" valign="top">q7_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga7f74841dd08196377cc29ce98deb2c12">arm_nn_depthwise_conv_nt_t_s8</a> (const q7_t *lhs, const q7_t *rhs, const int32_t input_offset, const uint16_t num_ch, const int32_t *out_shift, const int32_t *out_mult, const int32_t out_offset, const int32_t activation_min, const int32_t activation_max, const uint16_t row_x_col, const int32_t *const output_bias, q7_t *out)</td></tr>
+<tr class="memitem:gaf4e238a5ef16167a478d6e076f2207f1"><td class="memItemLeft" align="right" valign="top">int16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gaf4e238a5ef16167a478d6e076f2207f1">arm_nn_depthwise_conv_nt_t_s16</a> (const int16_t *lhs, const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *rhs, const uint16_t num_ch, const int32_t *out_shift, const int32_t *out_mult, const int32_t activation_min, const int32_t activation_max, const uint16_t row_x_col, const int64_t *const output_bias, int16_t *out)</td></tr>
+<tr class="memdesc:gaf4e238a5ef16167a478d6e076f2207f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depthwise convolution of transposed rhs matrix with 4 lhs matrices. To be used in non-padded cases. Dimensions are the same for lhs and rhs.  <a href="#gaf4e238a5ef16167a478d6e076f2207f1">More...</a><br/></td></tr>
+<tr class="separator:gaf4e238a5ef16167a478d6e076f2207f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f74841dd08196377cc29ce98deb2c12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga7f74841dd08196377cc29ce98deb2c12">arm_nn_depthwise_conv_nt_t_s8</a> (const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *lhs, const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *rhs, const int32_t input_offset, const uint16_t num_ch, const int32_t *out_shift, const int32_t *out_mult, const int32_t out_offset, const int32_t activation_min, const int32_t activation_max, const uint16_t row_x_col, const int32_t *const output_bias, <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *out)</td></tr>
 <tr class="memdesc:ga7f74841dd08196377cc29ce98deb2c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depthwise convolution of transposed rhs matrix with 4 lhs matrices. To be used in non-padded cases. Dimensions are the same for lhs and rhs.  <a href="#ga7f74841dd08196377cc29ce98deb2c12">More...</a><br/></td></tr>
 <tr class="separator:ga7f74841dd08196377cc29ce98deb2c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5224f2f155a59498c97f4d62ae726ea5"><td class="memItemLeft" align="right" valign="top">arm_status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga5224f2f155a59498c97f4d62ae726ea5">arm_nn_mat_mul_core_1x_s8</a> (int32_t row_elements, const int8_t *row_base, const int8_t *col_base, int32_t *const sum_col, int32_t *const output)</td></tr>
-<tr class="memdesc:ga5224f2f155a59498c97f4d62ae726ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">General Matrix-multiplication without requantization for one row &amp; one column.  <a href="#ga5224f2f155a59498c97f4d62ae726ea5">More...</a><br/></td></tr>
-<tr class="separator:ga5224f2f155a59498c97f4d62ae726ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae893fd2b0fadf44bcd2870ca2c2c3634"><td class="memItemLeft" align="right" valign="top">arm_status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gae893fd2b0fadf44bcd2870ca2c2c3634">arm_nn_mat_mul_core_4x_s8</a> (const int32_t row_elements, const int32_t offset, const int8_t *row_base, const int8_t *col_base, int32_t *const sum_col, int32_t *const output)</td></tr>
-<tr class="memdesc:gae893fd2b0fadf44bcd2870ca2c2c3634"><td class="mdescLeft">&#160;</td><td class="mdescRight">General Matrix-multiplication without requantization for four rows and one column.  <a href="#gae893fd2b0fadf44bcd2870ca2c2c3634">More...</a><br/></td></tr>
-<tr class="separator:gae893fd2b0fadf44bcd2870ca2c2c3634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga360cdaa16c399e3bfbeaaa7296c326e1"><td class="memItemLeft" align="right" valign="top">arm_status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga360cdaa16c399e3bfbeaaa7296c326e1">arm_nn_mat_mult_nt_t_s8</a> (const q7_t *lhs, const q7_t *rhs, const q31_t *bias, q7_t *dst, const int32_t *dst_multipliers, const int32_t *dst_shifts, const int32_t lhs_rows, const int32_t rhs_rows, const int32_t rhs_cols, const int32_t lhs_offset, const int32_t dst_offset, const int32_t activation_min, const int32_t activation_max)</td></tr>
-<tr class="memdesc:ga360cdaa16c399e3bfbeaaa7296c326e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">General Matrix-multiplication function with per-channel requantization. This function assumes:  <a href="#ga360cdaa16c399e3bfbeaaa7296c326e1">More...</a><br/></td></tr>
-<tr class="separator:ga360cdaa16c399e3bfbeaaa7296c326e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga08f8340aa6533271b3aa6d211614fe22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga08f8340aa6533271b3aa6d211614fe22">arm_nn_mult_q15</a> (q15_t *pSrcA, q15_t *pSrcB, q15_t *pDst, const uint16_t out_shift, uint32_t blockSize)</td></tr>
-<tr class="memdesc:ga08f8340aa6533271b3aa6d211614fe22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Q7 vector multiplication with variable output shifts.  <a href="#ga08f8340aa6533271b3aa6d211614fe22">More...</a><br/></td></tr>
+<tr class="memitem:gada3234313b4c9fefd7c4421d88c4a785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gada3234313b4c9fefd7c4421d88c4a785">arm_nn_mat_mul_core_1x_s8</a> (int32_t row_elements, const int32_t skipped_row_elements, const int8_t *row_base_ref, const int8_t *col_base_ref, const int32_t out_ch, const <a class="el" href="structcmsis__nn__conv__params.html">cmsis_nn_conv_params</a> *conv_params, const <a class="el" href="structcmsis__nn__per__channel__quant__params.html">cmsis_nn_per_channel_quant_params</a> *quant_params, const int32_t *bias, int8_t *output)</td></tr>
+<tr class="memdesc:gada3234313b4c9fefd7c4421d88c4a785"><td class="mdescLeft">&#160;</td><td class="mdescRight">General Vector by Matrix multiplication with requantization and storage of result.  <a href="#gada3234313b4c9fefd7c4421d88c4a785">More...</a><br/></td></tr>
+<tr class="separator:gada3234313b4c9fefd7c4421d88c4a785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga356c6870ac897816c016e7b77a3b767a"><td class="memItemLeft" align="right" valign="top">int8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga356c6870ac897816c016e7b77a3b767a">arm_nn_mat_mul_core_4x_s8</a> (const int32_t row_elements, const int32_t offset, const int8_t *row_base, const int8_t *col_base_ref, const int32_t out_ch, const <a class="el" href="structcmsis__nn__conv__params.html">cmsis_nn_conv_params</a> *conv_params, const <a class="el" href="structcmsis__nn__per__channel__quant__params.html">cmsis_nn_per_channel_quant_params</a> *quant_params, const int32_t *bias, int8_t *output)</td></tr>
+<tr class="memdesc:ga356c6870ac897816c016e7b77a3b767a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix-multiplication with requantization &amp; activation function for four rows and one column.  <a href="#ga356c6870ac897816c016e7b77a3b767a">More...</a><br/></td></tr>
+<tr class="separator:ga356c6870ac897816c016e7b77a3b767a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59ab655606dd4f7a90f573b7479c6dbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga59ab655606dd4f7a90f573b7479c6dbf">arm_nn_mat_mult_nt_t_s8</a> (const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *lhs, const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *rhs, const <a class="el" href="arm__nn__math__types_8h.html#adc89a3547f5324b7b3b95adec3806bc0">q31_t</a> *bias, <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *dst, const int32_t *dst_multipliers, const int32_t *dst_shifts, const int32_t lhs_rows, const int32_t rhs_rows, const int32_t rhs_cols, const int32_t lhs_offset, const int32_t dst_offset, const int32_t activation_min, const int32_t activation_max)</td></tr>
+<tr class="memdesc:ga59ab655606dd4f7a90f573b7479c6dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">General Matrix-multiplication function with per-channel requantization. This function assumes:  <a href="#ga59ab655606dd4f7a90f573b7479c6dbf">More...</a><br/></td></tr>
+<tr class="separator:ga59ab655606dd4f7a90f573b7479c6dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08f8340aa6533271b3aa6d211614fe22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga08f8340aa6533271b3aa6d211614fe22">arm_nn_mult_q15</a> (<a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *pSrcA, <a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *pSrcB, <a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *pDst, const uint16_t out_shift, uint32_t blockSize)</td></tr>
+<tr class="memdesc:ga08f8340aa6533271b3aa6d211614fe22"><td class="mdescLeft">&#160;</td><td class="mdescRight">q7 vector multiplication with variable output shifts  <a href="#ga08f8340aa6533271b3aa6d211614fe22">More...</a><br/></td></tr>
 <tr class="separator:ga08f8340aa6533271b3aa6d211614fe22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad46c9ab012cceda8ce6681c687a58c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gad46c9ab012cceda8ce6681c687a58c70">arm_nn_mult_q7</a> (q7_t *pSrcA, q7_t *pSrcB, q7_t *pDst, const uint16_t out_shift, uint32_t blockSize)</td></tr>
-<tr class="memdesc:gad46c9ab012cceda8ce6681c687a58c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Q7 vector multiplication with variable output shifts.  <a href="#gad46c9ab012cceda8ce6681c687a58c70">More...</a><br/></td></tr>
+<tr class="memitem:gad46c9ab012cceda8ce6681c687a58c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gad46c9ab012cceda8ce6681c687a58c70">arm_nn_mult_q7</a> (<a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *pSrcA, <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *pSrcB, <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *pDst, const uint16_t out_shift, uint32_t blockSize)</td></tr>
+<tr class="memdesc:gad46c9ab012cceda8ce6681c687a58c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">q7 vector multiplication with variable output shifts  <a href="#gad46c9ab012cceda8ce6681c687a58c70">More...</a><br/></td></tr>
 <tr class="separator:gad46c9ab012cceda8ce6681c687a58c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacbc28cf23c7549bcf89d1e8f1481c389"><td class="memItemLeft" align="right" valign="top">arm_status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gacbc28cf23c7549bcf89d1e8f1481c389">arm_nn_vec_mat_mult_t_s8</a> (const q7_t *lhs, const q7_t *rhs, const q31_t *bias, q7_t *dst, const int32_t lhs_offset, const int32_t rhs_offset, const int32_t dst_offset, const int32_t dst_multiplier, const int32_t dst_shift, const int32_t rhs_cols, const int32_t rhs_rows, const int32_t activation_min, const int32_t activation_max)</td></tr>
-<tr class="memdesc:gacbc28cf23c7549bcf89d1e8f1481c389"><td class="mdescLeft">&#160;</td><td class="mdescRight">s8 Vector by Matrix (transposed) multiplication  <a href="#gacbc28cf23c7549bcf89d1e8f1481c389">More...</a><br/></td></tr>
-<tr class="separator:gacbc28cf23c7549bcf89d1e8f1481c389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0675e8069a303ce2e8f8ed2a9320859"><td class="memItemLeft" align="right" valign="top">arm_status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#gac0675e8069a303ce2e8f8ed2a9320859">arm_nn_vec_mat_mult_t_svdf_s8</a> (const q7_t *lhs, const q7_t *rhs, q15_t *dst, const int32_t lhs_offset, const int32_t rhs_offset, const int32_t dst_offset, const int32_t dst_multiplier, const int32_t dst_shift, const int32_t rhs_cols, const int32_t rhs_rows, const int32_t activation_min, const int32_t activation_max)</td></tr>
-<tr class="memdesc:gac0675e8069a303ce2e8f8ed2a9320859"><td class="mdescLeft">&#160;</td><td class="mdescRight">s8 Vector by Matrix (transposed) multiplication with s16 output  <a href="#gac0675e8069a303ce2e8f8ed2a9320859">More...</a><br/></td></tr>
-<tr class="separator:gac0675e8069a303ce2e8f8ed2a9320859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3283c2da5c4e313a64cf348e2c161f3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga3283c2da5c4e313a64cf348e2c161f3f">arm_nn_vec_mat_mult_t_s16</a> (const <a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *lhs, const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *rhs, const <a class="el" href="arm__nn__math__types_8h.html#a5aea1cb12fc02d9d44c8abf217eaa5c6">q63_t</a> *bias, <a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *dst, const int32_t dst_multiplier, const int32_t dst_shift, const int32_t rhs_cols, const int32_t rhs_rows, const int32_t activation_min, const int32_t activation_max)</td></tr>
+<tr class="memdesc:ga3283c2da5c4e313a64cf348e2c161f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">s16 Vector by Matrix (transposed) multiplication  <a href="#ga3283c2da5c4e313a64cf348e2c161f3f">More...</a><br/></td></tr>
+<tr class="separator:ga3283c2da5c4e313a64cf348e2c161f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89f5ffb84bec69f51d734b8701d4df5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga89f5ffb84bec69f51d734b8701d4df5b">arm_nn_vec_mat_mult_t_s8</a> (const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *lhs, const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *rhs, const <a class="el" href="arm__nn__math__types_8h.html#adc89a3547f5324b7b3b95adec3806bc0">q31_t</a> *bias, <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *dst, const int32_t lhs_offset, const int32_t rhs_offset, const int32_t dst_offset, const int32_t dst_multiplier, const int32_t dst_shift, const int32_t rhs_cols, const int32_t rhs_rows, const int32_t activation_min, const int32_t activation_max, const int32_t address_offset)</td></tr>
+<tr class="memdesc:ga89f5ffb84bec69f51d734b8701d4df5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">s8 Vector by Matrix (transposed) multiplication  <a href="#ga89f5ffb84bec69f51d734b8701d4df5b">More...</a><br/></td></tr>
+<tr class="separator:ga89f5ffb84bec69f51d734b8701d4df5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15df1fc03dfaa6e7c2499dbcd8bc4932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NNBasicMath.html#ga15df1fc03dfaa6e7c2499dbcd8bc4932">arm_nn_vec_mat_mult_t_svdf_s8</a> (const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *lhs, const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *rhs, <a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *dst, const int32_t lhs_offset, const int32_t rhs_offset, const int32_t dst_offset, const int32_t dst_multiplier, const int32_t dst_shift, const int32_t rhs_cols, const int32_t rhs_rows, const int32_t activation_min, const int32_t activation_max)</td></tr>
+<tr class="memdesc:ga15df1fc03dfaa6e7c2499dbcd8bc4932"><td class="mdescLeft">&#160;</td><td class="mdescRight">s8 Vector by Matrix (transposed) multiplication with s16 output  <a href="#ga15df1fc03dfaa6e7c2499dbcd8bc4932">More...</a><br/></td></tr>
+<tr class="separator:ga15df1fc03dfaa6e7c2499dbcd8bc4932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <p>Basic Math Functions for Neural Network Computation </p>
@@ -161,13 +167,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void arm_nn_accumulate_q7_to_q15 </td>
           <td>(</td>
-          <td class="paramtype">q15_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -207,13 +213,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void arm_nn_add_q7 </td>
           <td>(</td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q31_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#adc89a3547f5324b7b3b95adec3806bc0">q31_t</a> *&#160;</td>
           <td class="paramname"><em>output</em>, </td>
         </tr>
         <tr>
@@ -252,15 +258,15 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">q7_t* arm_nn_depthwise_conv_nt_t_padded_s8 </td>
+          <td class="memname"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a>* arm_nn_depthwise_conv_nt_t_padded_s8 </td>
           <td>(</td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
@@ -320,7 +326,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q7_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
@@ -360,7 +366,112 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Referenced by <a class="el" href="group__NNConv.html#gab9dc832c407c0fe0f4d6fbb063e85e97">arm_depthwise_conv_s8_opt()</a>.</p>
+<p>Referenced by <a class="el" href="group__NNConv.html#ga51f7b85b6fc9db094f3d502dcbfd3a3d">arm_depthwise_conv_s8_opt()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf4e238a5ef16167a478d6e076f2207f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t* arm_nn_depthwise_conv_nt_t_s16 </td>
+          <td>(</td>
+          <td class="paramtype">const int16_t *&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>num_ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramname"><em>out_shift</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramname"><em>out_mult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>activation_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>activation_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>row_x_col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int64_t *const&#160;</td>
+          <td class="paramname"><em>output_bias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t *&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lhs</td><td>Input left-hand side matrix </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>Input right-hand side matrix (transposed) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_ch</td><td>Number of channels in LHS/RHS </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_shift</td><td>Per channel output shift. Length of vector is equal to number of channels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_mult</td><td>Per channel output multiplier. Length of vector is equal to number of channels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">activation_min</td><td>Minimum value to clamp the output to. Range: int8 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">activation_max</td><td>Maximum value to clamp the output to. Range: int8 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">row_x_col</td><td>(row_dimension * col_dimension) of LHS/RHS matrix </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output_bias</td><td>Per channel output bias. Length of vector is equal to number of channels. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out</td><td>Output pointer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns one of the two<ul>
+<li>Updated output pointer if an implementation is available</li>
+<li>NULL if no implementation is available.</li>
+</ul>
+</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If number of channels is not a multiple of 4, upto 3 elements outside the boundary will be read out for the following.<ul>
+<li>Output shift</li>
+<li>Output multiplier</li>
+<li>Output bias</li>
+<li>rhs </li>
+</ul>
+</dd></dl>
+
+<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#aa03e369b608572b80a4e56e8298a21c0">arm_nn_requantize_s64()</a>, and <a class="el" href="arm__nnsupportfunctions_8h.html#a19343832dbe881d527496171f69dc0c3">REDUCE_MULTIPLIER</a>.</p>
+
+<p>Referenced by <a class="el" href="group__NNConv.html#ga91c418d3d08f2969137e08e713a33f7e">arm_depthwise_conv_fast_s16()</a>.</p>
 
 </div>
 </div>
@@ -369,15 +480,15 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">q7_t* arm_nn_depthwise_conv_nt_t_s8 </td>
+          <td class="memname"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a>* arm_nn_depthwise_conv_nt_t_s8 </td>
           <td>(</td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
@@ -437,7 +548,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q7_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
@@ -477,16 +588,16 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Referenced by <a class="el" href="group__NNConv.html#gab9dc832c407c0fe0f4d6fbb063e85e97">arm_depthwise_conv_s8_opt()</a>.</p>
+<p>Referenced by <a class="el" href="group__NNConv.html#ga51f7b85b6fc9db094f3d502dcbfd3a3d">arm_depthwise_conv_s8_opt()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga5224f2f155a59498c97f4d62ae726ea5"></a>
+<a class="anchor" id="gada3234313b4c9fefd7c4421d88c4a785"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">arm_status arm_nn_mat_mul_core_1x_s8 </td>
+          <td class="memname"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a> arm_nn_mat_mul_core_1x_s8 </td>
           <td>(</td>
           <td class="paramtype">int32_t&#160;</td>
           <td class="paramname"><em>row_elements</em>, </td>
@@ -494,25 +605,49 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int8_t *&#160;</td>
-          <td class="paramname"><em>row_base</em>, </td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>skipped_row_elements</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int8_t *&#160;</td>
-          <td class="paramname"><em>col_base</em>, </td>
+          <td class="paramname"><em>row_base_ref</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t *const&#160;</td>
-          <td class="paramname"><em>sum_col</em>, </td>
+          <td class="paramtype">const int8_t *&#160;</td>
+          <td class="paramname"><em>col_base_ref</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t *const&#160;</td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>out_ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcmsis__nn__conv__params.html">cmsis_nn_conv_params</a> *&#160;</td>
+          <td class="paramname"><em>conv_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcmsis__nn__per__channel__quant__params.html">cmsis_nn_per_channel_quant_params</a> *&#160;</td>
+          <td class="paramname"><em>quant_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramname"><em>bias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t *&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -525,26 +660,32 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">row_elements</td><td>number of row elements </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">row_base</td><td>pointer to row operand </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">col_base</td><td>pointer to col operand </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sum_col</td><td>pointer to store sum of column elements </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>pointer to store result of multiply-accumulate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skipped_row_elements</td><td>number of row elements skipped due to padding. row_elements + skipped_row_elements = (kernel_x * kernel_y) * input_ch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">row_base_ref</td><td>pointer to row operand </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">col_base_ref</td><td>pointer to col operand </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_ch</td><td>Number of output channels </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conv_params</td><td>Pointer to convolution parameters like offsets and activation values </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">quant_params</td><td>Pointer to per-channel quantization parameters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Pointer to optional per-channel bias </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output where int8 results are stored. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The function returns the multiply-accumulated result of the row by column.</dd></dl>
-<p>Pseudo-code *output = 0 sum_col = 0 for (i = 0; i &lt; row_elements; i++) *output += row_base[i] * col_base[i] sum_col += col_base[i] </p>
+<dl class="section return"><dt>Returns</dt><dd>The function performs matrix(row_base_ref) multiplication with vector(col_base_ref) and scaled result is stored in memory.</dd></dl>
+<p>Pseudo-code *output = 0 sum_col = 0 for (j = 0; j &lt; out_ch; j++) for (i = 0; i &lt; row_elements; i++) *output += row_base_ref[i] * col_base_ref[i] sum_col += col_base_ref[i] scale sum_col using quant_params and bias store result in 'output' </p>
 
-<p>Referenced by <a class="el" href="group__NNConv.html#ga5b85b56e06e563c05b08ad6ba7423e1d">arm_convolve_1_x_n_s8()</a>, and <a class="el" href="group__NNConv.html#ga53608c814d9b8a458f4d87f8f40051b7">arm_convolve_1x1_s8_fast()</a>.</p>
+<p>References <a class="el" href="structcmsis__nn__conv__params.html#a37811f827c8b46689a0627b54043650c">cmsis_nn_conv_params::activation</a>, <a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184a3ba593df6b92214112a5e752c95ae016">ARM_CMSIS_NN_SUCCESS</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#a6a13b7a567485da5fc7f0d311318886d">arm_nn_requantize()</a>, <a class="el" href="structcmsis__nn__conv__params.html#ac284274c0aa03b1a0bcc0a93b275eadd">cmsis_nn_conv_params::input_offset</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ad935f1ff1a50822e317bdb321ce991ad">MAX</a>, <a class="el" href="structcmsis__nn__activation.html#a5fefc67d8979f6a9efe36330b9ba81cf">cmsis_nn_activation::max</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#adcd021ac91d43a62b2cdecf9a5b971a7">MIN</a>, <a class="el" href="structcmsis__nn__activation.html#a88a2ecd4bda8cd5f339c826df578585a">cmsis_nn_activation::min</a>, <a class="el" href="structcmsis__nn__per__channel__quant__params.html#a33b4a56acc8ffaa077f7db31b001e5bd">cmsis_nn_per_channel_quant_params::multiplier</a>, <a class="el" href="structcmsis__nn__conv__params.html#aa917be27492df19f6382df8d1d78870a">cmsis_nn_conv_params::output_offset</a>, and <a class="el" href="structcmsis__nn__per__channel__quant__params.html#a281dfde55f7a87b39a4a2c2c0362c813">cmsis_nn_per_channel_quant_params::shift</a>.</p>
+
+<p>Referenced by <a class="el" href="group__NNConv.html#ga6c569efc46ae1c38df1335888fc7873d">arm_convolve_1_x_n_s8()</a>, and <a class="el" href="group__NNConv.html#gae5a5bd1e247b50b2c24abe6eb7efb03a">arm_convolve_1x1_s8_fast()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gae893fd2b0fadf44bcd2870ca2c2c3634"></a>
+<a class="anchor" id="ga356c6870ac897816c016e7b77a3b767a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">arm_status arm_nn_mat_mul_core_4x_s8 </td>
+          <td class="memname">int8_t* arm_nn_mat_mul_core_4x_s8 </td>
           <td>(</td>
           <td class="paramtype">const int32_t&#160;</td>
           <td class="paramname"><em>row_elements</em>, </td>
@@ -570,13 +711,31 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t *const&#160;</td>
-          <td class="paramname"><em>sum_col</em>, </td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>out_ch</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="structcmsis__nn__conv__params.html">cmsis_nn_conv_params</a> *&#160;</td>
+          <td class="paramname"><em>conv_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcmsis__nn__per__channel__quant__params.html">cmsis_nn_per_channel_quant_params</a> *&#160;</td>
+          <td class="paramname"><em>quant_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t *&#160;</td>
+          <td class="paramname"><em>bias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t *&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -592,44 +751,49 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>offset between rows. Can be the same as row_elements. For e.g, in a 1x1 conv scenario with stride as 1. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">row_base</td><td>pointer to row operand </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">col_base</td><td>pointer to col operand </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sum_col</td><td>pointer to store sum of column elements </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>pointer to store result(4 int32's) of multiply-accumulate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_ch</td><td>Number of output channels </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conv_params</td><td>Pointer to convolution parameters like offsets and activation values </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">quant_params</td><td>Pointer to per-channel quantization parameters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Pointer to per-channel bias </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to output where int8 results are stored.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The function returns the multiply-accumulated result of the row by column</dd></dl>
-<p>Pseudo-code output[0] = 0 .. output[3] = 0 sum_col = 0 for (i = 0; i &lt; row_elements; i++) output[0] += row_base[i] * col_base[i] .. output[3] += row_base[i + (row_elements * 3)] * col_base[i] sum_col += col_base[i] </p>
+<dl class="section return"><dt>Returns</dt><dd>The function returns the updated output pointer or NULL if implementation is not available.</dd></dl>
+<p>Compliant to TFLM int8 specification. MVE implementation only </p>
 
-<p>Referenced by <a class="el" href="group__NNConv.html#ga5b85b56e06e563c05b08ad6ba7423e1d">arm_convolve_1_x_n_s8()</a>, <a class="el" href="group__NNConv.html#ga53608c814d9b8a458f4d87f8f40051b7">arm_convolve_1x1_s8_fast()</a>, and <a class="el" href="group__NNConv.html#ga34bb5c05805ca7d5ea9681fcad8a711d">arm_convolve_s8()</a>.</p>
+<p>References <a class="el" href="structcmsis__nn__conv__params.html#a37811f827c8b46689a0627b54043650c">cmsis_nn_conv_params::activation</a>, <a class="el" href="structcmsis__nn__conv__params.html#ac284274c0aa03b1a0bcc0a93b275eadd">cmsis_nn_conv_params::input_offset</a>, <a class="el" href="structcmsis__nn__activation.html#a5fefc67d8979f6a9efe36330b9ba81cf">cmsis_nn_activation::max</a>, <a class="el" href="structcmsis__nn__activation.html#a88a2ecd4bda8cd5f339c826df578585a">cmsis_nn_activation::min</a>, <a class="el" href="structcmsis__nn__per__channel__quant__params.html#a33b4a56acc8ffaa077f7db31b001e5bd">cmsis_nn_per_channel_quant_params::multiplier</a>, <a class="el" href="structcmsis__nn__conv__params.html#aa917be27492df19f6382df8d1d78870a">cmsis_nn_conv_params::output_offset</a>, and <a class="el" href="structcmsis__nn__per__channel__quant__params.html#a281dfde55f7a87b39a4a2c2c0362c813">cmsis_nn_per_channel_quant_params::shift</a>.</p>
+
+<p>Referenced by <a class="el" href="group__NNConv.html#ga6c569efc46ae1c38df1335888fc7873d">arm_convolve_1_x_n_s8()</a>, <a class="el" href="group__NNConv.html#gae5a5bd1e247b50b2c24abe6eb7efb03a">arm_convolve_1x1_s8_fast()</a>, and <a class="el" href="group__NNConv.html#ga96df33ccc893f8de9cd634a2cd13f01a">arm_convolve_s8()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga360cdaa16c399e3bfbeaaa7296c326e1"></a>
+<a class="anchor" id="ga59ab655606dd4f7a90f573b7479c6dbf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">arm_status arm_nn_mat_mult_nt_t_s8 </td>
+          <td class="memname"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a> arm_nn_mat_mult_nt_t_s8 </td>
           <td>(</td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const q31_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#adc89a3547f5324b7b3b95adec3806bc0">q31_t</a> *&#160;</td>
           <td class="paramname"><em>bias</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q7_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -716,11 +880,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The function returns <code>ARM_MATH_SUCCESS</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns <code>ARM_CMSIS_NN_SUCCESS</code> </dd></dl>
 
-<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#a31fa46f17212fbcb65d2cdae06fc08f5">arm_nn_read_q7x4()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ac9f7be20432a6926ac07c1f44b1b02fe">arm_nn_read_q7x4_ia()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#a6a13b7a567485da5fc7f0d311318886d">arm_nn_requantize()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ad935f1ff1a50822e317bdb321ce991ad">MAX</a>, and <a class="el" href="arm__nnsupportfunctions_8h.html#adcd021ac91d43a62b2cdecf9a5b971a7">MIN</a>.</p>
+<p>References <a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184a3ba593df6b92214112a5e752c95ae016">ARM_CMSIS_NN_SUCCESS</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#a31fa46f17212fbcb65d2cdae06fc08f5">arm_nn_read_q7x4()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ac9f7be20432a6926ac07c1f44b1b02fe">arm_nn_read_q7x4_ia()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#a6a13b7a567485da5fc7f0d311318886d">arm_nn_requantize()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ad935f1ff1a50822e317bdb321ce991ad">MAX</a>, and <a class="el" href="arm__nnsupportfunctions_8h.html#adcd021ac91d43a62b2cdecf9a5b971a7">MIN</a>.</p>
 
-<p>Referenced by <a class="el" href="group__NNConv.html#ga53608c814d9b8a458f4d87f8f40051b7">arm_convolve_1x1_s8_fast()</a>.</p>
+<p>Referenced by <a class="el" href="group__NNConv.html#gae5a5bd1e247b50b2c24abe6eb7efb03a">arm_convolve_1x1_s8_fast()</a>.</p>
 
 </div>
 </div>
@@ -731,19 +895,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void arm_nn_mult_q15 </td>
           <td>(</td>
-          <td class="paramtype">q15_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *&#160;</td>
           <td class="paramname"><em>pSrcA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q15_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *&#160;</td>
           <td class="paramname"><em>pSrcB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q15_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *&#160;</td>
           <td class="paramname"><em>pDst</em>, </td>
         </tr>
         <tr>
@@ -765,7 +929,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>q7 vector multiplication with variable output shifts</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">*pSrcA</td><td>pointer to the first input vector </td></tr>
@@ -777,9 +940,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p><b>Scaling and Overflow Behavior:</b> </p>
-<dl class="section user"><dt></dt><dd>The function uses saturating arithmetic. Results outside of the allowable Q15 range [0x8000 0x7FFF] will be saturated. </dd></dl>
+<dl class="section user"><dt></dt><dd>The function uses saturating arithmetic. Results outside of the allowable q15 range [0x8000 0x7FFF] will be saturated. </dd></dl>
 
-<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#afdda94a339b76615d3161e9fc63f4d21">arm_nn_read_q15x2_ia()</a>, and <a class="el" href="arm__nnsupportfunctions_8h.html#a4cbd428a2b4a4f6b2a6e4219520c7ce0">NN_ROUND</a>.</p>
+<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#a4cbd428a2b4a4f6b2a6e4219520c7ce0">NN_ROUND</a>.</p>
 
 </div>
 </div>
@@ -790,19 +953,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void arm_nn_mult_q7 </td>
           <td>(</td>
-          <td class="paramtype">q7_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>pSrcA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q7_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>pSrcB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q7_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>pDst</em>, </td>
         </tr>
         <tr>
@@ -824,7 +987,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>q7 vector multiplication with variable output shifts</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">*pSrcA</td><td>pointer to the first input vector </td></tr>
@@ -836,38 +998,132 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p><b>Scaling and Overflow Behavior:</b> </p>
-<dl class="section user"><dt></dt><dd>The function uses saturating arithmetic. Results outside of the allowable Q7 range [0x80 0x7F] will be saturated. </dd></dl>
+<dl class="section user"><dt></dt><dd>The function uses saturating arithmetic. Results outside of the allowable q7 range [0x80 0x7F] will be saturated. </dd></dl>
 
 <p>References <a class="el" href="arm__nnsupportfunctions_8h.html#a4cbd428a2b4a4f6b2a6e4219520c7ce0">NN_ROUND</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gacbc28cf23c7549bcf89d1e8f1481c389"></a>
+<a class="anchor" id="ga3283c2da5c4e313a64cf348e2c161f3f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">arm_status arm_nn_vec_mat_mult_t_s8 </td>
+          <td class="memname"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a> arm_nn_vec_mat_mult_t_s16 </td>
           <td>(</td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const q31_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#a5aea1cb12fc02d9d44c8abf217eaa5c6">q63_t</a> *&#160;</td>
           <td class="paramname"><em>bias</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q7_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>dst_multiplier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>dst_shift</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>rhs_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>rhs_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>activation_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>activation_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lhs</td><td>Input left-hand side vector </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>Input right-hand side matrix (transposed) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Input bias </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>Output vector </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst_multiplier</td><td>Output multiplier </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst_shift</td><td>Output shift </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs_cols</td><td>Number of columns in the right-hand side input matrix </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs_rows</td><td>Number of rows in the right-hand side input matrix </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">activation_min</td><td>Minimum value to clamp the output to. Range: int16 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">activation_max</td><td>Maximum value to clamp the output to. Range: int16</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns <code>ARM_CMSIS_NN_SUCCESS</code> </dd></dl>
+
+<p>References <a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184a3ba593df6b92214112a5e752c95ae016">ARM_CMSIS_NN_SUCCESS</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#afdda94a339b76615d3161e9fc63f4d21">arm_nn_read_q15x2_ia()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#aa03e369b608572b80a4e56e8298a21c0">arm_nn_requantize_s64()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ad935f1ff1a50822e317bdb321ce991ad">MAX</a>, and <a class="el" href="arm__nnsupportfunctions_8h.html#adcd021ac91d43a62b2cdecf9a5b971a7">MIN</a>.</p>
+
+<p>Referenced by <a class="el" href="group__FC.html#ga6613c4e797098f0a1ce870f71752e248">arm_fully_connected_s16()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga89f5ffb84bec69f51d734b8701d4df5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a> arm_nn_vec_mat_mult_t_s8 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#adc89a3547f5324b7b3b95adec3806bc0">q31_t</a> *&#160;</td>
+          <td class="paramname"><em>bias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -922,7 +1178,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int32_t&#160;</td>
-          <td class="paramname"><em>activation_max</em>&#160;</td>
+          <td class="paramname"><em>activation_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>address_offset</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -945,38 +1207,39 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rhs_cols</td><td>Number of columns in the right-hand side input matrix </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rhs_rows</td><td>Number of rows in the right-hand side input matrix </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">activation_min</td><td>Minimum value to clamp the output to. Range: int8 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">activation_max</td><td>Maximum value to clamp the output to. Range: int8</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">activation_max</td><td>Maximum value to clamp the output to. Range: int8 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address_offset</td><td>Memory position offset for dst. First output is stored at 'dst', the second at 'dst + address_offset' and so on. Default value is typically 1.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The function returns <code>ARM_MATH_SUCCESS</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns <code>ARM_CMSIS_NN_SUCCESS</code> </dd></dl>
 
-<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#ac9f7be20432a6926ac07c1f44b1b02fe">arm_nn_read_q7x4_ia()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#a6a13b7a567485da5fc7f0d311318886d">arm_nn_requantize()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ad935f1ff1a50822e317bdb321ce991ad">MAX</a>, and <a class="el" href="arm__nnsupportfunctions_8h.html#adcd021ac91d43a62b2cdecf9a5b971a7">MIN</a>.</p>
+<p>References <a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184a3ba593df6b92214112a5e752c95ae016">ARM_CMSIS_NN_SUCCESS</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ac9f7be20432a6926ac07c1f44b1b02fe">arm_nn_read_q7x4_ia()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#a6a13b7a567485da5fc7f0d311318886d">arm_nn_requantize()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ad935f1ff1a50822e317bdb321ce991ad">MAX</a>, and <a class="el" href="arm__nnsupportfunctions_8h.html#adcd021ac91d43a62b2cdecf9a5b971a7">MIN</a>.</p>
 
-<p>Referenced by <a class="el" href="group__FC.html#ga30d44fed122f2e159a417f9c12181ded">arm_fully_connected_s8()</a>.</p>
+<p>Referenced by <a class="el" href="group__FC.html#ga0e97c31706f6c663e813ffcbfceffa6d">arm_fully_connected_s8()</a>, and <a class="el" href="group__SVDF.html#ga243c5fc0ad2d2753872ed2fe6c78a41c">arm_svdf_s8()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gac0675e8069a303ce2e8f8ed2a9320859"></a>
+<a class="anchor" id="ga15df1fc03dfaa6e7c2499dbcd8bc4932"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">arm_status arm_nn_vec_mat_mult_t_svdf_s8 </td>
+          <td class="memname"><a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184">arm_cmsis_nn_status</a> arm_nn_vec_mat_mult_t_svdf_s8 </td>
           <td>(</td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const q7_t *&#160;</td>
+          <td class="paramtype">const <a class="el" href="arm__nn__math__types_8h.html#ae541b6f232c305361e9b416fc9eed263">q7_t</a> *&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">q15_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="arm__nn__math__types_8h.html#ab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -1057,11 +1320,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The function returns <code>ARM_MATH_SUCCESS</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns <code>ARM_CMSIS_NN_SUCCESS</code> </dd></dl>
 
-<p>References <a class="el" href="arm__nnsupportfunctions_8h.html#ac9f7be20432a6926ac07c1f44b1b02fe">arm_nn_read_q7x4_ia()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#a6a13b7a567485da5fc7f0d311318886d">arm_nn_requantize()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ad935f1ff1a50822e317bdb321ce991ad">MAX</a>, and <a class="el" href="arm__nnsupportfunctions_8h.html#adcd021ac91d43a62b2cdecf9a5b971a7">MIN</a>.</p>
+<p>References <a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184a36cebf184635d8a5c74c0057fa64e042">ARM_CMSIS_NN_ARG_ERROR</a>, <a class="el" href="arm__nn__math__types_8h.html#a67ac3e1e650a7040b0f706fb83ea6184a3ba593df6b92214112a5e752c95ae016">ARM_CMSIS_NN_SUCCESS</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ac9f7be20432a6926ac07c1f44b1b02fe">arm_nn_read_q7x4_ia()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#a6a13b7a567485da5fc7f0d311318886d">arm_nn_requantize()</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#ad935f1ff1a50822e317bdb321ce991ad">MAX</a>, <a class="el" href="arm__nnsupportfunctions_8h.html#adcd021ac91d43a62b2cdecf9a5b971a7">MIN</a>, and <a class="el" href="arm__nn__math__types_8h.html#a602e8d32c870d50039bbd651fd9b4544">NN_Q31_MAX</a>.</p>
 
-<p>Referenced by <a class="el" href="group__SVDF.html#ga9c4e7065f10d63b269f82b8e4e8afa04">arm_svdf_s8()</a>.</p>
+<p>Referenced by <a class="el" href="group__SVDF.html#gad623a1298bdaa6c518aca38122bd9846">arm_svdf_state_s16_s8()</a>.</p>
 
 </div>
 </div>

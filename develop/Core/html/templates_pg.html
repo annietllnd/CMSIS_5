@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-Core (Cortex-M)
-   &#160;<span id="projectnumber">Version 5.5.0</span>
+   &#160;<span id="projectnumber">Version 5.6.0</span>
    </div>
    <div id="projectbrief">CMSIS-Core support for Cortex-M processor-based devices</div>
   </td>
@@ -149,6 +149,10 @@ CMSIS-Core Processor Files</h1>
 <tr>
 <td align="left">core_cm55.h </td><td align="left">for the Cortex-M55 processor </td></tr>
 <tr>
+<td align="left">core_cm85.h </td><td align="left">for the Cortex-M85 processor </td></tr>
+<tr>
+<td align="left">core_starmc1.h </td><td align="left">for the STAR-MC1 processor </td></tr>
+<tr>
 <td align="left">core_sc000.h </td><td align="left">for the SecurCore SC000 processor </td></tr>
 <tr>
 <td align="left">core_sc300.h </td><td align="left">for the SecurCore SC300 processor </td></tr>
@@ -205,6 +209,8 @@ Device Examples</h1>
 <td align="left">ARM Cortex-M35P </td><td align="left">ARMCM35P_DSP_FP_TZ </td><td align="left">Cortex-M35P based device with TrustZone, SIMD, FPU </td></tr>
 <tr>
 <td align="left">ARM Cortex-M55 </td><td align="left">ARMCM55 </td><td align="left">Cortex-M55 based device with TrustZone, SIMD, double precision FPU, and floating-point MVE </td></tr>
+<tr>
+<td align="left">ARM Cortex-M85 </td><td align="left">ARMCM85 </td><td align="left">Cortex-M85 based device with TrustZone, PACBTI, SIMD, double precision FPU, and floating-point MVE </td></tr>
 <tr>
 <td align="left">ARM SC000 </td><td align="left">ARM SC000 </td><td align="left">SC000 based device </td></tr>
 <tr>
@@ -291,6 +297,7 @@ Template Files</h1>
 <ul>
 <li><a class="el" href="startup_c_pg.html">Startup File startup_&lt;device&gt;.c</a></li>
 <li><a class="el" href="startup_s_pg.html">Startup File startup_&lt;device&gt;.s (deprecated)</a> (deprecated)</li>
+<li><a class="el" href="linker_sct_pg.html">Scatter-Loading description file &lt;device&gt;_ac&lt;5|6&gt;.sct</a></li>
 <li><a class="el" href="system_c_pg.html">System Configuration Files system_&lt;device&gt;.c and system_&lt;device&gt;.h</a></li>
 <li><a class="el" href="device_h_pg.html">Device Header File &lt;device.h&gt;</a></li>
 <li><a class="el" href="partition_h_pg.html">TrustZone setup: partition_&lt;device&gt;.h</a></li>

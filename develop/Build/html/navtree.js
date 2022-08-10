@@ -1,13 +1,6 @@
 var NAVTREE =
 [
-  [ "CMSIS-Build", "index.html", [
-    [ "Overview", "index.html", [
-      [ "Components of CMSIS-Build", "index.html#CB_Components", null ]
-    ] ],
-    [ "Revision history", "build_revisionHistory.html", null ],
-    [ "Command Line Build", "CmdLineBuild.html", "CmdLineBuild" ],
-    [ "Project Description (*.cprj) Format", "cprjFormat_pg.html", "cprjFormat_pg" ]
-  ] ]
+  [ "CMSIS-Build", "index.html"]
 ];
 
 var NAVTREEINDEX =

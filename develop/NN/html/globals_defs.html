@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-NN
-   &#160;<span id="projectnumber">Version 3.0.0</span>
+   &#160;<span id="projectnumber">Version 4.0.0</span>
    </div>
    <div id="projectbrief">CMSIS NN Software Library</div>
   </td>
@@ -83,9 +83,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
       <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
       <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li class="current"><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li class="current"><a href="#index_u"><span>u</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -108,7 +125,7 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,32 +135,49 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
 </div>
 
 <div class="contents">
-&#160;<ul>
+&#160;
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>ACCUM_BITS
-: <a class="el" href="arm__softmax__s8_8c.html#a401e2dfaf6a8f0ef34f15295e026fd79">arm_softmax_s8.c</a>
+: <a class="el" href="arm__nn__softmax__common__s8_8c.html#a401e2dfaf6a8f0ef34f15295e026fd79">arm_nn_softmax_common_s8.c</a>
+, <a class="el" href="arm__softmax__s8_8c.html#a401e2dfaf6a8f0ef34f15295e026fd79">arm_softmax_s8.c</a>
 , <a class="el" href="arm__softmax__u8_8c.html#a401e2dfaf6a8f0ef34f15295e026fd79">arm_softmax_u8.c</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>CLAMP
 : <a class="el" href="arm__nnsupportfunctions_8h.html#abe05f0e80d965ae31dec16ba4063f48a">arm_nnsupportfunctions.h</a>
 </li>
-<li>DIM_KER_X
-: <a class="el" href="arm__convolve__1x1__s8__fast_8c.html#a95303901d70372a3e87f1026fa582e29">arm_convolve_1x1_s8_fast.c</a>
-</li>
-<li>DIM_KER_Y
-: <a class="el" href="arm__convolve__1x1__s8__fast_8c.html#aae182cde1be3fd4968de32d8a274c488">arm_convolve_1x1_s8_fast.c</a>
-</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>DIV_POW2
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a7ce5ee6d8839bf541fb4bbdf4ef80eb1">arm_nnsupportfunctions.h</a>
 </li>
 <li>DIV_POW2_MVE
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a0e4379e9eef514ce88d02b5dfbff256d">arm_nnsupportfunctions.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>EXP_ON_NEG
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a97055bb1e8a21ead129caecdfb24cfb1">arm_nnsupportfunctions.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>LEFT_SHIFT
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a2953f124ae444ebdd2b2a0873ac36b7e">arm_nnsupportfunctions.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>MASK_IF_NON_ZERO
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a0bc8558b22558613ed3ad3eb624ec7a5">arm_nnsupportfunctions.h</a>
 </li>
@@ -165,26 +199,74 @@ $(document).ready(function(){initNavTree('globals_defs.html','');});
 <li>MUL_SAT_MVE
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a6349818fec8167dff87c3fb7ca81fc1c">arm_nnsupportfunctions.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>NN_Q15_MAX
+: <a class="el" href="arm__nn__math__types_8h.html#a30fe8775d9c28c72fb7c336ab4751269">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q15_MIN
+: <a class="el" href="arm__nn__math__types_8h.html#a51e8177e289decc5ccf94be9c160064d">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q31_MAX
+: <a class="el" href="arm__nn__math__types_8h.html#a602e8d32c870d50039bbd651fd9b4544">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q31_MIN
+: <a class="el" href="arm__nn__math__types_8h.html#aa10494e03ee6bdf5d573079ca559f073">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q7_MAX
+: <a class="el" href="arm__nn__math__types_8h.html#a3fc66c904b4e92c8e06803dac0ee54a1">arm_nn_math_types.h</a>
+</li>
+<li>NN_Q7_MIN
+: <a class="el" href="arm__nn__math__types_8h.html#a342199b16a4abf4da4a7607a3a552b4f">arm_nn_math_types.h</a>
+</li>
 <li>NN_ROUND
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a4cbd428a2b4a4f6b2a6e4219520c7ce0">arm_nnsupportfunctions.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>ONE_OVER1
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a82ac477c930f5b05e8f71f6f61e405a8">arm_nnsupportfunctions.h</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>PACK_Q15x2_32x1
+: <a class="el" href="arm__nnsupportfunctions_8h.html#aed1da44adc8e0378f6508b8eea94a40e">arm_nnsupportfunctions.h</a>
+</li>
+<li>PACK_Q7x4_32x1
+: <a class="el" href="arm__nnsupportfunctions_8h.html#a7f8d7623a6fd3492efd9b38f45da38a6">arm_nnsupportfunctions.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>REDUCE_MULTIPLIER
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a19343832dbe881d527496171f69dc0c3">arm_nnsupportfunctions.h</a>
 </li>
 <li>RIGHT_SHIFT
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a26af54489c1401b91595bf0c92ef87c4">arm_nnsupportfunctions.h</a>
 </li>
-<li>SAT_INPUT
-: <a class="el" href="arm__elementwise__add__s8_8c.html#a1606ef9b62cb80afbf1d780c4958cf0c">arm_elementwise_add_s8.c</a>
-</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>SELECT_IF_NON_ZERO
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a4b3b6a6ed8cb224c5bcabd9ad1c94fde">arm_nnsupportfunctions.h</a>
 </li>
 <li>SELECT_USING_MASK
 : <a class="el" href="arm__nnsupportfunctions_8h.html#a6f69b7e95b80e10a5f5d2ddbbfbc301f">arm_nnsupportfunctions.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>USE_FAST_DW_CONV_FUNCTION
+: <a class="el" href="group__NNConv.html#ga48d5105c2270fad5d5dc407d60bc894c">arm_depthwise_conv_wrapper_s16.c</a>
 </li>
 <li>USE_INTRINSIC
 : <a class="el" href="arm__nnfunctions_8h.html#a710b6e009261290c6151f329cf409530">arm_nnfunctions.h</a>
